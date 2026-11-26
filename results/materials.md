@@ -4,13 +4,14 @@
 
 | Материал | Содержимое |
 |---|---|
-| [bag-current.zip](https://github.com/mattprishi/mgts-go2-localization/releases/download/v1.0.0/bag-current.zip) | Выходной rosbag2 первого повтора. Папка `result_bag` содержит `metadata.yaml` и `result_bag_0.mcap`. В записи 6 202 сообщения, включая 1 481 позу и 1 481 сообщение TF. |
-| [demo.mp4](https://github.com/mattprishi/mgts-go2-localization/releases/download/v1.0.0/demo.mp4) | Один поворот в двух ракурсах RViz рядом. В ролике 12 секунд движения, примерно с 47-й до 59-й секунды прохода. |
-| [top.mp4](https://github.com/mattprishi/mgts-go2-localization/releases/download/v1.0.0/top.mp4) · [third.mp4](https://github.com/mattprishi/mgts-go2-localization/releases/download/v1.0.0/third.mp4) | Полноразмерные записи вида сверху и от третьего лица, по 24 с при 15 кадрах/с. Они получены до переноса вычислений старта в фон. Положение, карта, сканы и траектория совпадают с выбранным прогоном. |
+| [bag-current.zip](bag-current.zip) | Выходной rosbag2 первого повтора. Папка `result_bag` содержит `metadata.yaml` и `result_bag_0.mcap`. В записи 6 202 сообщения, включая 1 481 позу и 1 481 сообщение TF. |
+| [demo.mp4](demo.mp4) | Один поворот в двух ракурсах RViz рядом. В ролике 12 секунд движения, примерно с 47-й до 59-й секунды прохода. |
+| [comparison.mp4](comparison.mp4) | Сравнение трёх методов в RViz на участке 50–59 с. Слева одометрия, в центре одометрия с ICP, справа финальный ICP с EKF. Ролик длится 9 с. |
+| [top.mp4](top.mp4) · [third.mp4](third.mp4) | Полноразмерные записи вида сверху и от третьего лица, по 24 с при 15 кадрах/с. Они получены до переноса вычислений старта в фон. Положение, карта, сканы и траектория совпадают с выбранным прогоном. |
 | [metrics.csv](metrics.csv) | Полный проход. Два базовых метода, выбранная реализация и пустая строка для окончательной сдачи. Геометрия и покрытие относятся к проходу; задержка выбранной реализации — к первому из трёх повторов. Последний столбец указывает число превышений 72 мс в каждом повторе. |
-| [timing-runs.csv](timing-runs.csv) · [timings.zip](https://github.com/mattprishi/mgts-go2-localization/releases/download/v1.0.0/timings.zip) | Отдельная строка для каждого из пяти прогонов. В архиве лежат сырые замеры внешнего подписчика и самого узла, сводки, проверка bag и результаты сравнения повторов. |
+| [timing-runs.csv](timing-runs.csv) · [timings.zip](timings.zip) | Отдельная строка для каждого из пяти прогонов. В архиве лежат сырые замеры внешнего подписчика и самого узла, сводки, проверка bag и результаты сравнения повторов. |
 | [restart-checks.csv](restart-checks.csv) | Десять контрольных стартов каждого поискового метода, с исходными и изменёнными осями локальной одометрии. |
-| [SHA256SUMS.txt](https://github.com/mattprishi/mgts-go2-localization/releases/download/v1.0.0/SHA256SUMS.txt) | Контрольные суммы файлов комплекта. Команда проверки из этой папки — `shasum -a 256 -c SHA256SUMS.txt`. |
+| [SHA256SUMS.txt](SHA256SUMS.txt) | Контрольные суммы файлов комплекта. Команда проверки из этой папки — `shasum -a 256 -c SHA256SUMS.txt`. |
 
 ## Воспроизведение
 
