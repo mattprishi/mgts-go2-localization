@@ -1,0 +1,10 @@
+/utlidar/cloud_deskewed:
+  history: keep_last
+  depth: 128
+  reliability: reliable
+  durability: volatile
+/utlidar/robot_odom:
+  history: keep_last
+  depth: 512
+  reliability: reliable
+  durability: volatile

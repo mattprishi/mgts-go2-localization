@@ -1,0 +1,7 @@
+method,gauge,count,agrees,inconsistent,timeout,median_lock_s
+baseline,original,10,4,6,0,2.2002630235
+baseline,changed,10,3,7,0,2.226645945999998
+canonical,original,10,4,6,0,1.8645042179999969
+canonical,changed,10,4,6,0,1.8645042179999969
+multiview,original,10,7,2,1,4.2395429610000015
+multiview,changed,10,7,2,1,4.2395429610000015

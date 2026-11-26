@@ -1,0 +1,116 @@
+{
+  "reference": {
+    "run": "sync-multiview-ekf",
+    "input_scans": 1525,
+    "measured_poses": 1481,
+    "first_scan": 45,
+    "first_pose_wall_s": 3.448612877,
+    "continuous_after_lock": true,
+    "all_inputs_seen": true,
+    "p50_ms": 1.462542,
+    "p95_ms": 3.646125,
+    "p99_ms": 14.685366600000041,
+    "max_ms": 298.783667,
+    "missed_72ms": 4,
+    "within_72ms_fraction": 0.9972991222147198,
+    "missed_scan_numbers": [
+      45,
+      46,
+      47,
+      48
+    ],
+    "after_next_arrival": 4,
+    "next_arrival_comparisons": 1480,
+    "pose_and_tf_agree": true,
+    "target_met": false
+  },
+  "repeats": [
+    {
+      "run": "prefetch-01",
+      "input_scans": 1525,
+      "measured_poses": 1481,
+      "first_scan": 45,
+      "first_pose_wall_s": 3.17971175,
+      "continuous_after_lock": true,
+      "all_inputs_seen": true,
+      "p50_ms": 1.536458,
+      "p95_ms": 5.067791,
+      "p99_ms": 12.70656720000004,
+      "max_ms": 35.607375,
+      "missed_72ms": 0,
+      "within_72ms_fraction": 1.0,
+      "missed_scan_numbers": [],
+      "after_next_arrival": 0,
+      "next_arrival_comparisons": 1480,
+      "pose_and_tf_agree": true,
+      "target_met": true,
+      "identical_messages_by_topic": {
+        "/solution/map": 19,
+        "/solution/status": 1525,
+        "/solution/pose": 1481,
+        "/tf": 1481,
+        "/solution/scan": 1481,
+        "/solution/path": 215
+      }
+    },
+    {
+      "run": "prefetch-02",
+      "input_scans": 1525,
+      "measured_poses": 1481,
+      "first_scan": 45,
+      "first_pose_wall_s": 3.182636584,
+      "continuous_after_lock": true,
+      "all_inputs_seen": true,
+      "p50_ms": 1.4405,
+      "p95_ms": 3.511292,
+      "p99_ms": 11.602583800000064,
+      "max_ms": 54.491625,
+      "missed_72ms": 0,
+      "within_72ms_fraction": 1.0,
+      "missed_scan_numbers": [],
+      "after_next_arrival": 1,
+      "next_arrival_comparisons": 1480,
+      "pose_and_tf_agree": true,
+      "target_met": true,
+      "identical_messages_by_topic": {
+        "/solution/map": 19,
+        "/solution/status": 1525,
+        "/solution/pose": 1481,
+        "/tf": 1481,
+        "/solution/scan": 1481,
+        "/solution/path": 215
+      }
+    },
+    {
+      "run": "prefetch-03",
+      "input_scans": 1525,
+      "measured_poses": 1481,
+      "first_scan": 45,
+      "first_pose_wall_s": 3.1791585839999996,
+      "continuous_after_lock": true,
+      "all_inputs_seen": true,
+      "p50_ms": 1.517083,
+      "p95_ms": 4.486292,
+      "p99_ms": 18.891216800000077,
+      "max_ms": 91.988416,
+      "missed_72ms": 1,
+      "within_72ms_fraction": 0.9993247805536799,
+      "missed_scan_numbers": [
+        276
+      ],
+      "after_next_arrival": 2,
+      "next_arrival_comparisons": 1480,
+      "pose_and_tf_agree": true,
+      "target_met": true,
+      "identical_messages_by_topic": {
+        "/solution/map": 19,
+        "/solution/status": 1525,
+        "/solution/pose": 1481,
+        "/tf": 1481,
+        "/solution/scan": 1481,
+        "/solution/path": 215
+      }
+    }
+  ],
+  "all_repeats_pass": true
+}

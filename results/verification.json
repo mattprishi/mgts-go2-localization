@@ -1,0 +1,19 @@
+{
+  "original_frames": 1525,
+  "topics": {
+    "status": 1525,
+    "map": 19,
+    "scan": 1481,
+    "pose": 1481,
+    "tf": 1481,
+    "path": 215
+  },
+  "status": {
+    "initializing": 44,
+    "initialized": 1,
+    "tracked": 1341,
+    "odometry": 139
+  },
+  "all_input_stamps_accounted_for": true,
+  "pose_and_tf_agree": true
+}
