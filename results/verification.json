@@ -11,8 +11,8 @@
   "status": {
     "initializing": 44,
     "initialized": 1,
-    "tracked": 1341,
-    "odometry": 139
+    "tracked": 1352,
+    "odometry": 128
   },
   "all_input_stamps_accounted_for": true,
   "pose_and_tf_agree": true

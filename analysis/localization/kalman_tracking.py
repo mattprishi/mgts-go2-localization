@@ -95,13 +95,15 @@ class KalmanTracking(GeometryLocalizer):
             self.turn_yaws.clear()
         self.initialized = True
 
-    def _predict(self, odom, stamp_ns):
+    def _predict(self, odom, stamp_ns, gyro_turn=None):
         dt = (stamp_ns - self.last_stamp) * 1e-9
         if dt <= 0:
             raise ValueError("Expected strictly increasing scan measurement timestamps")
         angle = self.state[2] - self.last_odom[2]
         delta = rotation(angle) @ (odom[:2] - self.last_odom[:2])
         turn = wrap(odom[2] - self.last_odom[2])
+        if gyro_turn is not None:
+            turn += 0.5 * wrap(gyro_turn - turn)
         decay = np.exp(-dt / self.noise.memory_s)
         drift_time = self.noise.memory_s * (1 - decay)
         jac = np.eye(6)
@@ -143,7 +145,7 @@ class KalmanTracking(GeometryLocalizer):
             return None
         return proposal, pivot[0]
 
-    def update(self, scan_xyz, odom_se2, stamp_ns):
+    def update(self, scan_xyz, odom_se2, stamp_ns, gyro_turn=None):
         odom = np.asarray(odom_se2, dtype=float)
         if odom.shape != (3,) or not np.all(np.isfinite(odom)):
             raise ValueError("Expected finite [x_m, y_m, yaw_rad] in the scan's odom frame")
@@ -155,7 +157,7 @@ class KalmanTracking(GeometryLocalizer):
             return result
         current = structure(scan_xyz)
         self.history.append(current)
-        self._predict(odom, stamp_ns)
+        self._predict(odom, stamp_ns, gyro_turn)
         if self.turn_yaws is not None:
             if not self.turn_yaws:
                 self.turn_yaws.append(self.last_odom[2])

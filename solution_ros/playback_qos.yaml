@@ -8,3 +8,8 @@
   depth: 512
   reliability: reliable
   durability: volatile
+/utlidar/imu:
+  history: keep_last
+  depth: 256
+  reliability: reliable
+  durability: volatile

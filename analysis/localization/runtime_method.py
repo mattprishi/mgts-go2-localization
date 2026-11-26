@@ -63,11 +63,11 @@ class RuntimeLocalizer:
             return self.start.last_start_candidates
         return []
 
-    def update(self, points, odom, stamp_ns):
+    def update(self, points, odom, stamp_ns, gyro_turn=None):
         if self.method == "odometry" and self.start.initialized:
             return FrameResult(self.start.correction, "odometry", np.nan, np.nan)
         if self.tracker is not None and self.tracker.initialized:
-            return self.tracker.update(points, se2_pose(odom), stamp_ns)
+            return self.tracker.update(points, se2_pose(odom), stamp_ns, gyro_turn)
         if self.start_mode == "baseline":
             result = self.start.update(points)
         else:

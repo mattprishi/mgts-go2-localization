@@ -1,116 +1,91 @@
 {
-  "reference": {
-    "run": "sync-multiview-ekf",
-    "input_scans": 1525,
-    "measured_poses": 1481,
-    "first_scan": 45,
-    "first_pose_wall_s": 3.448612877,
-    "continuous_after_lock": true,
-    "all_inputs_seen": true,
-    "p50_ms": 1.462542,
-    "p95_ms": 3.646125,
-    "p99_ms": 14.685366600000041,
-    "max_ms": 298.783667,
-    "missed_72ms": 4,
-    "within_72ms_fraction": 0.9972991222147198,
-    "missed_scan_numbers": [
-      45,
-      46,
-      47,
-      48
-    ],
-    "after_next_arrival": 4,
-    "next_arrival_comparisons": 1480,
-    "pose_and_tf_agree": true,
-    "target_met": false
-  },
+  "selected": "ros-gyro",
   "repeats": [
     {
-      "run": "prefetch-01",
-      "input_scans": 1525,
-      "measured_poses": 1481,
-      "first_scan": 45,
-      "first_pose_wall_s": 3.17971175,
-      "continuous_after_lock": true,
-      "all_inputs_seen": true,
-      "p50_ms": 1.536458,
-      "p95_ms": 5.067791,
-      "p99_ms": 12.70656720000004,
-      "max_ms": 35.607375,
-      "missed_72ms": 0,
-      "within_72ms_fraction": 1.0,
-      "missed_scan_numbers": [],
-      "after_next_arrival": 0,
-      "next_arrival_comparisons": 1480,
-      "pose_and_tf_agree": true,
-      "target_met": true,
-      "identical_messages_by_topic": {
-        "/solution/map": 19,
-        "/solution/status": 1525,
-        "/solution/pose": 1481,
-        "/tf": 1481,
-        "/solution/scan": 1481,
-        "/solution/path": 215
-      }
-    },
-    {
-      "run": "prefetch-02",
-      "input_scans": 1525,
-      "measured_poses": 1481,
-      "first_scan": 45,
-      "first_pose_wall_s": 3.182636584,
-      "continuous_after_lock": true,
-      "all_inputs_seen": true,
-      "p50_ms": 1.4405,
-      "p95_ms": 3.511292,
-      "p99_ms": 11.602583800000064,
-      "max_ms": 54.491625,
-      "missed_72ms": 0,
-      "within_72ms_fraction": 1.0,
-      "missed_scan_numbers": [],
-      "after_next_arrival": 1,
-      "next_arrival_comparisons": 1480,
-      "pose_and_tf_agree": true,
-      "target_met": true,
-      "identical_messages_by_topic": {
-        "/solution/map": 19,
-        "/solution/status": 1525,
-        "/solution/pose": 1481,
-        "/tf": 1481,
-        "/solution/scan": 1481,
-        "/solution/path": 215
-      }
-    },
-    {
-      "run": "prefetch-03",
-      "input_scans": 1525,
-      "measured_poses": 1481,
-      "first_scan": 45,
-      "first_pose_wall_s": 3.1791585839999996,
-      "continuous_after_lock": true,
-      "all_inputs_seen": true,
-      "p50_ms": 1.517083,
-      "p95_ms": 4.486292,
-      "p99_ms": 18.891216800000077,
-      "max_ms": 91.988416,
-      "missed_72ms": 1,
-      "within_72ms_fraction": 0.9993247805536799,
-      "missed_scan_numbers": [
-        276
+      "run": "ros-gyro",
+      "all": 90.57406704809874,
+      "turns": 89.0711529141577,
+      "late_65_end": 94.80236156667505,
+      "dist": 8.222884704440405,
+      "xy_diff": [
+        0.43369350778418964,
+        2.368500521346351,
+        6.267319909272026
       ],
-      "after_next_arrival": 2,
-      "next_arrival_comparisons": 1480,
-      "pose_and_tf_agree": true,
-      "target_met": true,
-      "identical_messages_by_topic": {
-        "/solution/map": 19,
-        "/solution/status": 1525,
-        "/solution/pose": 1481,
-        "/tf": 1481,
-        "/solution/scan": 1481,
-        "/solution/path": 215
-      }
+      "final_cm": 0.1298423777520199,
+      "max_time_s": 31.497961760000003,
+      "fallback": 128,
+      "rms_accel": 0.5194199591997486,
+      "gyro_updates": 1480,
+      "init_s": 3.196353918,
+      "p95_ms": 3.887084,
+      "p99_ms": 12.283491000000025,
+      "p999_ms": 30.66570516000063,
+      "max_ms": 40.037416,
+      "over_72": 0,
+      "late_scan_numbers": [],
+      "poses": 1481
+    },
+    {
+      "run": "ros-gyro-02",
+      "all": 90.57406704809874,
+      "turns": 89.0711529141577,
+      "late_65_end": 94.80236156667505,
+      "dist": 8.22292090542815,
+      "xy_diff": [
+        0.43369350778418964,
+        2.3685005222847293,
+        6.267319909272026
+      ],
+      "final_cm": 0.1298423777520199,
+      "max_time_s": 31.497961760000003,
+      "fallback": 128,
+      "rms_accel": 0.519404817162022,
+      "gyro_updates": 1479,
+      "init_s": 3.178095168,
+      "p95_ms": 3.766208,
+      "p99_ms": 12.879150400000015,
+      "p999_ms": 74.18843816001365,
+      "max_ms": 170.149292,
+      "over_72": 2,
+      "late_scan_numbers": [
+        504,
+        505
+      ],
+      "poses": 1481
+    },
+    {
+      "run": "ros-gyro-03",
+      "all": 90.57406704809874,
+      "turns": 89.0711529141577,
+      "late_65_end": 94.80236156667505,
+      "dist": 8.222884704440405,
+      "xy_diff": [
+        0.43369350778418964,
+        2.368500521346351,
+        6.267319909272026
+      ],
+      "final_cm": 0.1298423777520199,
+      "max_time_s": 31.497961760000003,
+      "fallback": 128,
+      "rms_accel": 0.5194199591997486,
+      "gyro_updates": 1480,
+      "init_s": 3.1763999600000004,
+      "p95_ms": 3.62,
+      "p99_ms": 11.22680040000011,
+      "p999_ms": 24.94216000000014,
+      "max_ms": 26.662583,
+      "over_72": 0,
+      "late_scan_numbers": [],
+      "poses": 1481
     }
   ],
-  "all_repeats_pass": true
+  "pooled": {
+    "poses": 4443,
+    "within_72ms": 4441,
+    "p95_ms": 3.771683599999998,
+    "p99_ms": 12.773306579999993,
+    "p999_ms": 30.779936314002715,
+    "max_ms": 170.149292
+  }
 }

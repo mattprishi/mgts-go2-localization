@@ -1,0 +1,122 @@
+{
+  "windows": {
+    "all": {
+      "n": 1480,
+      "baseline": {
+        "overlap_pct": 90.54963239234935,
+        "distance_cm": 8.233776961706898,
+        "jumps": 0,
+        "fallback": 139
+      },
+      "gyro": {
+        "overlap_pct": 90.57406704809874,
+        "distance_cm": 8.222884704440405,
+        "jumps": 0,
+        "fallback": 128
+      }
+    },
+    "turns": {
+      "n": 320,
+      "baseline": {
+        "overlap_pct": 88.95893799196286,
+        "distance_cm": 8.917805008845772,
+        "jumps": 0,
+        "fallback": 31
+      },
+      "gyro": {
+        "overlap_pct": 89.0711529141577,
+        "distance_cm": 8.89538049463942,
+        "jumps": 0,
+        "fallback": 26
+      }
+    },
+    "early_5_45": {
+      "n": 556,
+      "baseline": {
+        "overlap_pct": 86.64846858407624,
+        "distance_cm": 9.042809767397898,
+        "jumps": 0,
+        "fallback": 54
+      },
+      "gyro": {
+        "overlap_pct": 86.64137445247034,
+        "distance_cm": 9.041050366053613,
+        "jumps": 0,
+        "fallback": 46
+      }
+    },
+    "middle_45_65": {
+      "n": 276,
+      "baseline": {
+        "overlap_pct": 89.01473563555197,
+        "distance_cm": 9.301044043316606,
+        "jumps": 0,
+        "fallback": 33
+      },
+      "gyro": {
+        "overlap_pct": 89.2671042313847,
+        "distance_cm": 9.263836995297476,
+        "jumps": 0,
+        "fallback": 31
+      }
+    },
+    "late_65_end": {
+      "n": 623,
+      "baseline": {
+        "overlap_pct": 94.85153180951549,
+        "distance_cm": 6.988510177713726,
+        "jumps": 0,
+        "fallback": 49
+      },
+      "gyro": {
+        "overlap_pct": 94.80236156667505,
+        "distance_cm": 6.980745475308773,
+        "jumps": 0,
+        "fallback": 48
+      }
+    },
+    "turn_50_55": {
+      "n": 69,
+      "baseline": {
+        "overlap_pct": 95.10055150851578,
+        "distance_cm": 6.581719409413448,
+        "jumps": 0,
+        "fallback": 6
+      },
+      "gyro": {
+        "overlap_pct": 95.03506874229905,
+        "distance_cm": 6.520268337477475,
+        "jumps": 0,
+        "fallback": 2
+      }
+    }
+  },
+  "published": 1481,
+  "status_differences": 61,
+  "xy_cm_median_p95_max": [
+    0.43369350778418964,
+    2.368500521346351,
+    6.267319909272026
+  ],
+  "xy_end_cm": 0.1298423777520199,
+  "peak_xy_at_s": 31.497961760000003,
+  "heading_deg_median_p95_max": [
+    0.05989211860653714,
+    0.3204565353928348,
+    0.7153403820478997
+  ],
+  "motion": [
+    {
+      "xy_length_m": 44.38689194941483,
+      "grid_steps": 212,
+      "xy_accel_rms_m_s2": 0.5167089757175551,
+      "yaw_accel_rms_deg_s2": 79.84489623174629
+    },
+    {
+      "xy_length_m": 44.41565972413907,
+      "grid_steps": 212,
+      "xy_accel_rms_m_s2": 0.5194199591997486,
+      "yaw_accel_rms_deg_s2": 79.64457588035758
+    }
+  ]
+}
